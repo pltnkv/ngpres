@@ -1,0 +1,27 @@
+<form class="settings" name="form" ng-submit="saveSettings()" novalidate>
+    <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
+
+    <div class="form-group">
+        <label>None selected email message</label>
+        <input name="message" ng-model="settings.message" required ng-minlength="10" ng-maxlength="33">
+        <span ng-show="form.message.$error.required">Message is required</span>
+        <span ng-show="form.message.$error.minlength">MinLength error</span>
+        <span ng-show="form.message.$error.maxlength">MaxLength error</span>
+    </div>
+
+    <div class="form-group">
+        <label>Bar font size</label>
+        <input type="number" name="size" ng-model="settings.fontSize" min="8" max="30">
+        <span ng-show="form.size.$error.number"> The value is not a valid integer!</span>
+        <span ng-show="form.size.$error.min || form.size.$error.max"> The value must be in range 8 to 30!</span>
+    </div>
+
+    <div class="form-group">
+        <label>Buttons color</label><br/>
+        <input type="radio" ng-model="settings.buttonColor" value="btn-default"/> grey<br/>
+        <input type="radio" ng-model="settings.buttonColor" value="btn-primary"/> blue<br/>
+        <input type="radio" ng-model="settings.buttonColor" value="btn-success"/> green
+    </div>
+
+    <button type="submit" class="btn" ng-class="settings.buttonColor" ng-disabled="!form.$valid">Save settings</button>
+</form>

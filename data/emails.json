@@ -1,0 +1,32 @@
+[
+    {
+        "from": "plotnikov@multivi.ru",
+        "title": "First Javascript conf Perm",
+        "body": "we are here"
+    },
+    {
+        "from": "serega@gmail.com",
+        "title": "About Angular",
+        "body": "Creates a new array or string containing only a specified number of elements. The elements are taken from either the beginning or the end of the source array"
+    },
+    {
+        "from": "kiska404@ya.ru",
+        "title": "TypesScript cool!!!!",
+        "body": "TypeScript lets you write JavaScript the way you really want to. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser."
+    },
+    {
+        "from": "username@mail.com",
+        "title": "Pixi.js - 2D webGL renderer with canvas fallback",
+        "body": "There are a host of other engines covering game, sound and physics etc. and they all work beautifully with Pixi."
+    },
+    {
+        "from": "samebody42@email.com",
+        "title": "gdg perm",
+        "body": "body"
+    },
+    {
+        "from": "90jdss@10miutes.com",
+        "title": "some title",
+        "body": "asdasdsdf"
+    }
+]

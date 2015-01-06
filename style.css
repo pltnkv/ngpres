@@ -1,0 +1,30 @@
+.emails-list {
+    float: left;
+    width: 200px;
+}
+
+.emails-list input {
+    display: block;
+    margin-top: 20px;
+}
+
+.emails-list .list {
+    margin-top: 20px;
+}
+
+.emails-list .preview {
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.emails-list .preview .from {
+    color: #666;
+}
+
+.emails-info {
+    margin-left: 300px;
+}
+
+.settings span {
+    color: darkred;
+}

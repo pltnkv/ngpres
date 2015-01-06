@@ -1,0 +1,22 @@
+<div class="emails-list" ng-controller="EmailBarCtrl">
+    <button type="button" class="btn" ng-class="settings.buttonColor" ng-click="sendEmail()">Send email</button>
+    <input placeholder="Filter emails" ng-model="query">
+
+    <div class="list" ng-style="{'font-size':settings.fontSize+'px'}">
+        <emails-preview ng-repeat="email in emails | filter:query"
+                        ng-click="selectEmail(email)"
+                        email="email"></emails-preview>
+    </div>
+</div>
+
+<div class="emails-info">
+    <h4 ng-hide="selectedEmail">{{settings.message}}</h4>
+
+    <div ng-show="selectedEmail" class="info">
+        <h3>{{selectedEmail.title}}</h3>
+        <h4>from: {{selectedEmail.from}}</h4>
+
+        <p>{{selectedEmail.body}}</p>
+    </div>
+</div>
+<user name="userInfo.name" avatar="userInfo.pictureURL"></user>
